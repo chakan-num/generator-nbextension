@@ -6,7 +6,8 @@ requirements:
   build:
     - python
   run:
-    - jupyter
+    - nbsetuptools
+    - notebook
 
 source:
   path: ../
