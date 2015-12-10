@@ -1,0 +1,6 @@
+name: <%= parameterized %>
+channels:
+  - anaconda-notebook
+dependencies:
+  - notebook
+  - nbsetuptools

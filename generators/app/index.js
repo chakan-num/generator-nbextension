@@ -34,6 +34,13 @@ module.exports = yeoman.generators.Base.extend({
       done();
     }.bind(this));
   },
+  extension: function() {
+    this.fs.copyTpl(
+      this.templatePath('_extension'),
+      this.destinationPath(this.context.parameterized),
+      this.context
+    );
+  },
   condaRecipe: function() {
     this.fs.copyTpl(
       this.templatePath('conda.recipe'),
@@ -41,23 +48,37 @@ module.exports = yeoman.generators.Base.extend({
       this.context
     );
   },
+  binstar: function() {
+    this.fs.copyTpl(
+      this.templatePath('_binstar.yml'),
+      this.destinationPath('.binstar.yml'),
+      this.context
+    );
+  },
+  gitignore: function() {
+    this.fs.copyTpl(
+      this.templatePath('_gitignore'),
+      this.destinationPath('.gitignore'),
+      this.context
+    );
+  },
+  environment: function() {
+    this.fs.copyTpl(
+      this.templatePath('environment.yml'),
+      this.destinationPath('environment.yml'),
+      this.context
+    );
+  },
   readme: function() {
     this.fs.copyTpl(
-      this.templatePath('_README.md'),
+      this.templatePath('README.md'),
       this.destinationPath('README.md'),
       this.context
     );
   },
-  manifest: function() {
+  setup: function() {
     this.fs.copyTpl(
-      this.templatePath('_manifest.md'),
-      this.destinationPath(this.extensionParameterized + '.md'),
-      this.context
-    );
-  },
-  manifest: function() {
-    this.fs.copyTpl(
-      this.templatePath('_setup.py'),
+      this.templatePath('setup.py'),
       this.destinationPath('setup.py'),
       this.context
     );
