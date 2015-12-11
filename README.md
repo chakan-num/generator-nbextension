@@ -6,8 +6,15 @@
 First, install [Yeoman](http://yeoman.io) and generator-nbextension using
 [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
+With **conda**:
 
-```bash
+```
+conda install generator-nbextension -c javascript -c anaconda-notebook
+```
+
+With **npm**:
+
+```
 npm install -g yo
 npm install -g generator-nbextension
 ```
@@ -21,19 +28,16 @@ yo nbextension
 ## Development
 
 ```bash
-conda create -n notebooks nodejs -c javascript
+conda create -n yoeman -c javascript
 npm install
-npm install -g yo
 npm link
 ```
 
-Once you want to start testing run:
-
-```bash
-yo nbextension
-```
-
 And start hacking!
+
+## Publish
+
+Follow [this](https://docs.npmjs.com/getting-started/publishing-npm-packages) guide.
 
 ## License
 
