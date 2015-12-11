@@ -4,15 +4,16 @@ user: anaconda-notebook
 platform:
   - linux-64
   - osx-64
-  - win-64
-
-engine:
-  - python=2.7
-  - python=3.4
-  - python=3.5
 
 script:
   - conda build conda.recipe -c anaconda-notebook -c javascript
 
-build_targets: conda
+install:
+  - conda install yoeman -c javascript
 
+test:
+  - npm install
+  - npm link
+  - yo nbextension:app --help
+
+build_targets: conda
