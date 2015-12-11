@@ -9,7 +9,9 @@ requirements:
     - yoeman
   run:
     - nodejs
+    - nbsetuptools
     - yoeman
+
 about:
   home: http://github.com/anaconda-notebook/generator-nbextension
   license: TBD
