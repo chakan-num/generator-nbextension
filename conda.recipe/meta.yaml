@@ -1,0 +1,15 @@
+package:
+  name: generator-nbextension
+  version: 0.1.0
+
+requirements:
+  build:
+    - nodejs
+    - yoeman
+  run:
+    - nodejs
+    - yoeman
+about:
+  home: http://github.com/anaconda-notebook/generator-nbextension
+  license: TBD
+
