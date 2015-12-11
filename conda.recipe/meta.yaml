@@ -4,6 +4,7 @@ package:
 
 requirements:
   build:
+    - gulp
     - nodejs
     - yoeman
   run:
