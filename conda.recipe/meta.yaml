@@ -14,5 +14,5 @@ requirements:
 
 about:
   home: http://github.com/anaconda-notebook/generator-nbextension
-  license: TBD
-
+  license_file: LICENSE
+  license: BSD License
