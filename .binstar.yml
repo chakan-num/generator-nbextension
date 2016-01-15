@@ -1,17 +1,21 @@
 package: generator-nbextension
-user: anaconda-notebook
 
 platform:
   - linux-64
   - osx-64
-
-script:
-  - conda build conda.recipe -c anaconda-notebook -c javascript
+  - win-64
+  - linux-32
+  - win-32
 
 install:
-  - conda install yoeman -c javascript
+  - conda config --add channels anaconda-nb-extensions
+  - conda config --add channels javascript
+  - conda install yoeman
 
-test:
+script:
+  - conda build --quiet conda.recipe
+
+after_script:
   - npm install
   - npm link
   - yo nbextension:app --help

@@ -13,6 +13,6 @@ requirements:
     - yoeman
 
 about:
-  home: http://github.com/anaconda-notebook/generator-nbextension
+  home: http://github.com/anaconda-nb-extensions/generator-nbextension
   license_file: LICENSE
   license: BSD License
