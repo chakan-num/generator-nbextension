@@ -1,6 +1,6 @@
 package:
   name: generator-nbextension
-  version: 0.1.3
+  version: 0.1.4
 
 requirements:
   build:

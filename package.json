@@ -1,6 +1,6 @@
 {
   "name": "generator-nbextension",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Create your own nbextensions",
   "homepage": "http://github.com/anaconda-server/generator-nbextension",
   "author": {
