@@ -14,5 +14,4 @@ requirements:
 
 about:
   home: http://github.com/anaconda-nb-extensions/generator-nbextension
-  license_file: LICENSE
-  license: BSD License
+  license: BSD
