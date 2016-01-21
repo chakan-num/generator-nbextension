@@ -9,7 +9,7 @@ First, install [Yeoman](http://yeoman.io) and generator-nbextension using
 With **conda**:
 
 ```
-conda install generator-nbextension -c javascript -c anaconda-notebook
+conda install generator-nbextension -c javascript -c anaconda-nb-extensions
 ```
 
 With **npm**:

@@ -1,6 +1,6 @@
 name: <%= parameterized %>
 channels:
-  - anaconda-notebook
+  - anaconda-nb-extensions
 dependencies:
   - notebook
   - nbsetuptools

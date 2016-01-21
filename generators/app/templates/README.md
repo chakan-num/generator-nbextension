@@ -3,7 +3,7 @@
 ## Develop
 
 ```
-conda install notebook nbsetuptools -c anaconda-notebook
+conda install notebook nbsetuptools -c anaconda-nb-extensions
 python setup.py develop
 cd <%= name %>
 python setup.py install --prefix $CONDA_ENV_PATH --enable --symlink
