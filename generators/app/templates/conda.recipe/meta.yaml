@@ -5,9 +5,6 @@ package:
 requirements:
   build:
     - python
-  run:
-    - nbsetuptools
-    - nb_config_manager
 
 source:
   path: ../
