@@ -9,7 +9,6 @@ requirements:
     - yoeman
   run:
     - nodejs
-    - nbsetuptools
     - yoeman
 
 about:
