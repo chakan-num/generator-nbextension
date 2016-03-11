@@ -13,12 +13,17 @@ def _jupyter_nbextension_paths():
             section="notebook",
             src=os.path.join("static"),
             dest="<%= parameterized %>",
-            require="<%= parameterized %>/main")
-        # dict(
-        #     section="tree",
-        #     src=os.path.join("static"),
-        #     dest="<%= parameterized %>",
-        #     require="<%= parameterized %>/tree")
+            require="<%= parameterized %>/main"),
+        dict(
+            section="tree",
+            src=os.path.join("static"),
+            dest="<%= parameterized %>",
+            require="<%= parameterized %>/tree"),
+        dict(
+            section="edit",
+            src=os.path.join("static"),
+            dest="<%= parameterized %>",
+            require="<%= parameterized %>/edit")
     ]
 
 
