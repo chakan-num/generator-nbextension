@@ -4,6 +4,7 @@ package:
 
 requirements:
   build:
+    - notebook
     - python
 
 source:
