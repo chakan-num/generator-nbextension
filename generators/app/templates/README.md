@@ -3,16 +3,16 @@
 ## Develop
 
 ```
-conda install notebook nbsetuptools -c anaconda-nb-extensions
 python setup.py develop
-cd <%= name %>
-python setup.py install --prefix $CONDA_ENV_PATH --enable --symlink
+jupyter nbextension install --symlink --py <%= name %> --sys-prefix --symlink
+jupyter nbextension enable --py <%= name %> --sys-prefix
+jupyter serverextension enable --py <%= name %> --sys-prefix
 ```
 
 Now you are ready to start testing with:
 
 ```
-JUPYTER_CONFIG_DIR=$CONDA_ENV_PATH/etc/jupyter jupyter notebook
+jupyter notebook
 ```
 
 ## Distribution
@@ -20,7 +20,7 @@ JUPYTER_CONFIG_DIR=$CONDA_ENV_PATH/etc/jupyter jupyter notebook
 Once you are happy with your extension you can run:
 
 ```
-conda build conda.recipe -c anaconda-notebbok
+conda build conda.recipe
 ```
 
 And upload your package to [Anaconda-Cloud](http://anaconda.org). So everybody can
