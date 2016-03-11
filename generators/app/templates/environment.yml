@@ -3,4 +3,3 @@ channels:
   - anaconda-nb-extensions
 dependencies:
   - notebook
-  - nbsetuptools
