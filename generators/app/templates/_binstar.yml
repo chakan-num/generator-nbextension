@@ -11,8 +11,8 @@ engine:
   - python=3.5
 
 install:
-  - conda build conda.recipe -c anaconda-nb-extensions
-  - conda install <%= parameterized %> --use-local -c anaconda-nb-extensions
+  - conda build conda.recipe
+  - conda install <%= parameterized %> --use-local
 
 test:
   - python -m unittest discover
