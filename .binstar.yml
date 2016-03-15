@@ -10,7 +10,10 @@ platform:
 install:
   - conda config --add channels anaconda-nb-extensions
   - conda config --add channels javascript
-  - conda install nodejs yoeman
+  - conda install nodejs
+  - npm dedupe
+  - conda install yoeman
+
 
 script:
   - conda build --quiet conda.recipe
